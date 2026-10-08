@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DreamNight Design Language v1.0：品牌设计语言标本与空间连续性交互示例。">
+  <title>DreamNight Design — DNDL v1.0</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../tokens.css">
+  <link rel="stylesheet" href="../materials.css">
+  <link rel="stylesheet" href="../motion.css">
+  <link rel="stylesheet" href="specimen.css">
+  <script defer src="specimen.js"></script>
+</head>
+<body>
+  <a class="skip dn-focus" href="#main">跳至内容</a>
+  <header class="site-header dn-acrylic">
+    <a class="wordmark dn-focus" href="#main" aria-label="DreamNight Design 首页">DreamNight<span> / Design</span></a>
+    <nav aria-label="标本章节">
+      <a class="dn-focus" href="#foundations">Foundations</a>
+      <a class="dn-focus" href="#expression">Expression</a>
+      <a class="dn-focus" href="#continuity">Continuity</a>
+    </nav>
+    <span class="release">DNDL <strong>1.0</strong></span>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-main dn-enter">
+        <p class="kicker">DREAMNIGHT DESIGN LANGUAGE</p>
+        <h1 id="hero-title">Content first.<br>Identity always.</h1>
+        <p class="hero-cn">让内容成为界面。<br>让不同产品，说同一种设计语言。</p>
+        <a class="text-link dn-focus" href="#foundations">探索品牌基准 <span aria-hidden="true">↘</span></a>
+      </div>
+      <aside class="hero-side dn-enter" style="--dn-enter-index: 1" aria-label="版本与适用范围">
+        <div class="version-field">
+          <p class="kicker">THE FIRST EDITION</p>
+          <p class="edition">1.0<span>/ DNDL</span></p>
+          <p>Metro 的几何精神，<br>当代的层级与空间。</p>
+        </div>
+        <div class="scope-field">
+          <p class="kicker">A LANGUAGE, NOT A LAYOUT</p>
+          <p>品牌统一。<br>产品独立。</p>
+          <span>个人门户 / 项目官网 / 独立应用</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="foundations" class="section" aria-labelledby="foundations-title">
+      <div class="section-heading">
+        <div><p class="kicker">01 / FOUNDATIONS</p><h2 id="foundations-title">色彩先行，内容清晰。</h2></div>
+        <p>保留大面积实色，而非只剩装饰。<br>八种品牌色，使用经过验证的深色文字。</p>
+      </div>
+      <div class="palette" aria-label="八种品牌原始色">
+        <div class="swatch teal"><span>Teal</span><code>#59AAA5</code><small>品牌 / 主要强调</small></div>
+        <div class="swatch cyan"><span>Cyan</span><code>#70B2D1</code><small>内容 / 信息</small></div>
+        <div class="swatch emerald"><span>Emerald</span><code>#72AD8C</code><small>积极 / 功能</small></div>
+        <div class="swatch violet"><span>Violet</span><code>#A18BC8</code><small>创作 / 探索</small></div>
+        <div class="swatch amber"><span>Amber</span><code>#D4AC65</code><small>提醒 / 辅助</small></div>
+        <div class="swatch orange"><span>Orange</span><code>#D78E74</code><small>活动 / 次级强调</small></div>
+        <div class="swatch steel"><span>Steel</span><code>#829BA9</code><small>中性 / 分区</small></div>
+        <div class="swatch crimson"><span>Crimson</span><code>#C98292</code><small>错误 / 危险</small></div>
+      </div>
+      <div class="foundation-note"><span>INK ≠ WHITE BY DEFAULT</span><p>原色保持不变。色块正文使用 <code>--dn-text-on-color</code>；浅色次要正文使用 <code>--dn-text-secondary</code>。不以颜色代替状态说明。</p></div>
+    </section>
+
+    <section id="expression" class="section expression" aria-labelledby="expression-title">
+      <div class="type-sheet">
+        <p class="kicker">02 / EXPRESSION</p>
+        <h2 id="expression-title">Typography<br>is interface.</h2>
+        <p class="type-cn">字体，就是界面。</p>
+        <p class="body-note">让字号、字重和留白建立关系。<br>少一点容器，多一点内容。</p>
+        <div class="type-metrics"><span>300 <small>DISPLAY WEIGHT</small></span><span>0 <small>CORNER RADIUS</small></span></div>
+      </div>
+      <div class="information-sheet">
+        <p class="kicker">INFORMATION, NOT JUST AN ICON</p>
+        <h3>规范本身，<br>也是有价值的内容。</h3>
+        <dl class="spec-facts">
+          <div><dt>品牌基准</dt><dd>DNDL v1.0</dd></div>
+          <div><dt>实现版本</dt><dd>1.0.0</dd></div>
+          <div><dt>核心原则</dt><dd>6 项</dd></div>
+          <div><dt>产品布局</dt><dd>由产品独立决定</dd></div>
+        </dl>
+        <p class="static-label">静态标本 · 内容来自本仓库规范，不代表实时项目状态。</p>
+      </div>
+    </section>
+
+    <section id="continuity" class="section" aria-labelledby="continuity-title">
+      <div class="section-heading">
+        <div><p class="kicker">03 / SPATIAL CONTINUITY</p><h2 id="continuity-title">展开有来处，返回有方向。</h2></div>
+        <p>Infinity 是操作的空间连续性，<br>不是无限画布，也不是无限滚动。</p>
+      </div>
+      <div class="continuity-grid">
+        <a id="origin" class="origin dn-interactive dn-focus" href="#continuity-notes">
+          <span class="kicker">ORIGIN & RETURN</span>
+          <span class="origin-title">从这里，<br>展开一个想法。</span>
+          <span class="origin-bottom">查看空间连续性示例 <span aria-hidden="true">↗</span></span>
+        </a>
+        <div class="interaction-sheet">
+          <p class="kicker">MATERIAL & FEEDBACK</p>
+          <h3>只在需要时，<br>让层级浮现。</h3>
+          <p>左侧色块默认为平面；Hover 轻微抬起，按下轻缩放。顶部导航局部采用 Acrylic，不改变实色色块。</p>
+          <label class="input-label" for="context-note">上下文记录 <span>仅本页暂存，不上传</span></label>
+          <input id="context-note" class="dn-focus" type="text" maxlength="80" placeholder="写下一句话，再打开左侧详情" autocomplete="off">
+          <button id="transparency" class="outline-button dn-focus" type="button" aria-pressed="false" data-js hidden>关闭 Acrylic 透明效果</button>
+          <p id="material-status" class="material-status" role="status">模糊不可用时自动使用不透明背景。</p>
+        </div>
+      </div>
+      <div id="continuity-notes" class="continuity-notes">
+        <p class="kicker">THE INTERACTION CONTRACT</p>
+        <ol><li><strong>来源</strong>：从触发色块的位置展开。</li><li><strong>上下文</strong>：底层页面与输入内容保留。</li><li><strong>返回</strong>：关闭回到来源，恢复滚动与焦点。</li></ol>
+        <noscript><p>JavaScript 已关闭：上方链接仍可跳转到本说明，品牌标本和规范链接仍可阅读。</p></noscript>
+      </div>
+    </section>
+
+    <section class="handoff" aria-labelledby="handoff-title">
+      <div><p class="kicker">ONE FOUNDATION. MANY PRODUCTS.</p><h2 id="handoff-title">共享语言，<br>不共享一个答案。</h2></div>
+      <div class="handoff-links"><a class="dn-focus" href="../DESIGN.md">阅读完整规范 <span aria-hidden="true">↗</span></a><a class="dn-focus" href="../tokens.css">查看 Design Tokens <span aria-hidden="true">↗</span></a><a class="dn-focus" href="../AGENTS.md">Agent 实现约束 <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer><span>DreamNight / Design</span><p>DNDL v1.0 · 品牌标本，不是产品页面模板。</p><a class="dn-focus" href="#main">回到顶部 ↑</a></footer>
+
+  <dialog id="detail" aria-labelledby="detail-title" aria-describedby="detail-description">
+    <div class="detail-panel dn-elevation-4">
+      <div class="detail-heading">
+        <p class="kicker">ORIGIN → DETAIL → RETURN</p>
+        <button id="close-detail" class="close-button dn-focus" type="button" aria-label="关闭详情并返回来源" autofocus>关闭 <span aria-hidden="true">↙</span></button>
+        <h2 id="detail-title">你没有离开，<br>只是深入了一层。</h2>
+      </div>
+      <div class="detail-body">
+        <p id="detail-description">这不是一个新页面。来源色块仍在原处，底层滚动位置与输入内容也没有被清空。</p>
+        <ol class="detail-steps"><li><span>01</span><div><h3>Origin</h3><p>面板从触发元素的几何位置展开。</p></div></li><li><span>02</span><div><h3>Context</h3><p>浏览器原生模态层约束焦点，保留页面上下文。</p></div></li><li><span>03</span><div><h3>Return</h3><p>关闭或按 Escape，面板回到来源，焦点返回触发链接。</p></div></li></ol>
+        <p class="detail-fallback">开启「减少动态效果」时不做空间位移动画，所有操作仍可用。</p>
+        <button id="return-detail" class="return-button dn-interactive dn-focus" type="button">返回原处 <span aria-hidden="true">↙</span></button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
