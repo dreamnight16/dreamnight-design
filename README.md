@@ -12,7 +12,7 @@ DreamNight 的独立品牌设计仓库：规范 + 框架无关 Design Tokens + �
 | [`tokens.css`](tokens.css) | 原始色板、语义值、字体、直角、层级、材质和动效默认值 |
 | [`AGENTS.md`](AGENTS.md) | 开发 Agent 的执行规则与验收清单 |
 | [`materials.css`](materials.css) | 可选 Acrylic 与层级工具；含不透明回退 |
-| [`motion.css`](motion.css) | 可选 hover / press / 焦点 / 入场工具；含减少动态效果 |
+| [`motion.css`](motion.css) | 可选 hover / press / 焦点 / 入场与交错升入工具；含减少动态效果 |
 | [`examples/index.html`](examples/index.html) | 可离线打开的响应式品牌标本，演示详情展开与返回 |
 | [`tests/validate.mjs`](tests/validate.mjs) | 零依赖色彩、Token 与仓库契约检查 |
 | [`tests/browser.cjs`](tests/browser.cjs) | 用本机 Edge / Chrome 和 puppeteer-core 进行真实交互检查 |
@@ -79,7 +79,7 @@ node tests/browser.cjs
 
 ## 管理与升级
 
-- 当前版本 `1.0.0`。DNDL v1.0 是品牌名称，1.0.0 是可分发实现版本。
+- 当前版本 `1.1.0`。DNDL v1.0 是品牌名称，1.1.0 是可分发实现版本。
 - 文档修正 / 补充示例：PATCH，例如 1.0.1。
 - 向后兼容的新 Token / 主题 / 工具：MINOR，例如 1.1.0；新主题需重新验色。
 - 既有 Token 改名或移除、品牌色或核心几何 / 交互原则的不兼容变更：MAJOR，例如 2.0.0。

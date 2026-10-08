@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/examples/" },
+    { "source": "/specimen.css", "destination": "/examples/specimen.css" },
+    { "source": "/specimen.js", "destination": "/examples/specimen.js" }
+  ]
+}

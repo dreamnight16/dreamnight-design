@@ -52,14 +52,14 @@
         <p>保留大面积实色，而非只剩装饰。<br>八种品牌色，使用经过验证的深色文字。</p>
       </div>
       <div class="palette" aria-label="八种品牌原始色">
-        <div class="swatch teal"><span>Teal</span><code>#59AAA5</code><small>品牌 / 主要强调</small></div>
-        <div class="swatch cyan"><span>Cyan</span><code>#70B2D1</code><small>内容 / 信息</small></div>
-        <div class="swatch emerald"><span>Emerald</span><code>#72AD8C</code><small>积极 / 功能</small></div>
-        <div class="swatch violet"><span>Violet</span><code>#A18BC8</code><small>创作 / 探索</small></div>
-        <div class="swatch amber"><span>Amber</span><code>#D4AC65</code><small>提醒 / 辅助</small></div>
-        <div class="swatch orange"><span>Orange</span><code>#D78E74</code><small>活动 / 次级强调</small></div>
-        <div class="swatch steel"><span>Steel</span><code>#829BA9</code><small>中性 / 分区</small></div>
-        <div class="swatch crimson"><span>Crimson</span><code>#C98292</code><small>错误 / 危险</small></div>
+        <div class="swatch teal dn-rise" style="--dn-enter-index: 0"><span>Teal</span><code>#59AAA5</code><small>品牌 / 主要强调</small></div>
+        <div class="swatch cyan dn-rise" style="--dn-enter-index: 1"><span>Cyan</span><code>#70B2D1</code><small>内容 / 信息</small></div>
+        <div class="swatch emerald dn-rise" style="--dn-enter-index: 2"><span>Emerald</span><code>#72AD8C</code><small>积极 / 功能</small></div>
+        <div class="swatch violet dn-rise" style="--dn-enter-index: 3"><span>Violet</span><code>#A18BC8</code><small>创作 / 探索</small></div>
+        <div class="swatch amber dn-rise" style="--dn-enter-index: 4"><span>Amber</span><code>#D4AC65</code><small>提醒 / 辅助</small></div>
+        <div class="swatch orange dn-rise" style="--dn-enter-index: 5"><span>Orange</span><code>#D78E74</code><small>活动 / 次级强调</small></div>
+        <div class="swatch steel dn-rise" style="--dn-enter-index: 6"><span>Steel</span><code>#829BA9</code><small>中性 / 分区</small></div>
+        <div class="swatch crimson dn-rise" style="--dn-enter-index: 7"><span>Crimson</span><code>#C98292</code><small>错误 / 危险</small></div>
       </div>
       <div class="foundation-note"><span>INK ≠ WHITE BY DEFAULT</span><p>原色保持不变。色块正文使用 <code>--dn-text-on-color</code>；浅色次要正文使用 <code>--dn-text-secondary</code>。不以颜色代替状态说明。</p></div>
     </section>
@@ -77,7 +77,7 @@
         <h3>规范本身，<br>也是有价值的内容。</h3>
         <dl class="spec-facts">
           <div><dt>品牌基准</dt><dd>DNDL v1.0</dd></div>
-          <div><dt>实现版本</dt><dd>1.0.0</dd></div>
+          <div><dt>实现版本</dt><dd>1.1.0</dd></div>
           <div><dt>核心原则</dt><dd>6 项</dd></div>
           <div><dt>产品布局</dt><dd>由产品独立决定</dd></div>
         </dl>
@@ -99,7 +99,7 @@
         <div class="interaction-sheet">
           <p class="kicker">MATERIAL & FEEDBACK</p>
           <h3>只在需要时，<br>让层级浮现。</h3>
-          <p>左侧色块默认为平面；Hover 轻微抬起，按下轻缩放。顶部导航局部采用 Acrylic，不改变实色色块。</p>
+          <p>左侧色块默认为平面；Hover 以回弹曲线轻微抬起，按下轻缩放。顶部导航局部采用 Acrylic，不改变实色色块。</p>
           <label class="input-label" for="context-note">上下文记录 <span>仅本页暂存，不上传</span></label>
           <input id="context-note" class="dn-focus" type="text" maxlength="80" placeholder="写下一句话，再打开左侧详情" autocomplete="off">
           <button id="transparency" class="outline-button dn-focus" type="button" aria-pressed="false" data-js hidden>关闭 Acrylic 透明效果</button>
